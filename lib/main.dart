@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:localshop/View/splash_screen/splash_screen.dart';
 import 'consts/consts.dart';
 
@@ -11,14 +12,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,
+    // use get x change MaterialApp to getMaterialApp
+
+
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: appname,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.transparent,
-        appBarTheme: const AppBarTheme (backgroundColor: Colors.transparent),
+        appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
         fontFamily: regular,
       ),
-home: const SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
