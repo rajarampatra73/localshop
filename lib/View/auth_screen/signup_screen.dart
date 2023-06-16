@@ -16,6 +16,7 @@ class SignupScreen extends StatefulWidget {
 }
 
 class _SignupScreenState extends State<SignupScreen> {
+  bool? isCheck = false;
   @override
   Widget build(BuildContext context) {
     return bgWidget(
@@ -43,9 +44,15 @@ class _SignupScreenState extends State<SignupScreen> {
                 Row(
                   children: [
                     Checkbox(
-                      checkColor: redColor,
-                      value: false,
-                      onChanged: (newValue) {},
+                      checkColor: whiteColor,
+                      activeColor: redColor,
+                      value: isCheck,
+                      onChanged: (newValue) {
+                        setState(() {
+                          isCheck = newValue;
+
+                        });
+                      },
                     ), // Checkbox
                     10.widthBox,
                     Expanded(
@@ -55,25 +62,25 @@ class _SignupScreenState extends State<SignupScreen> {
                           TextSpan(
                               text: "I agree to the ",
                               style: TextStyle(
-                                fontFamily: bold,
+                                fontFamily: regular,
                                 color: fontGrey,
                               )),
                           TextSpan(
                               text: termAndCond,
                               style: TextStyle(
-                                fontFamily: bold,
+                                fontFamily: regular,
                                 color: Colors.red,
                               )),
                           TextSpan(
                               text: " & ",
                               style: TextStyle(
-                                fontFamily: bold,
+                                fontFamily: regular,
                                 color: fontGrey,
                               )),
                           TextSpan(
                               text: privacyPolicy,
                               style: TextStyle(
-                                fontFamily: bold,
+                                fontFamily: regular,
                                 color: Colors.red,
                               )), //// TextSpan // RichText
                           // Row
@@ -84,7 +91,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 5.heightBox,
                 ourButton(
-                        color: redColor,
+                        color: isCheck == true?  redColor : lightGrey,
                         title: signup,
                         textColor: whiteColor,
                         onPress: () {})

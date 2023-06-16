@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:localshop/View/auth_screen/signup_screen.dart';
+import 'package:localshop/View/home_screeen/home.dart';
 import 'package:localshop/consts/consts.dart';
 import 'package:localshop/widgets_common/applogo_widget.dart';
 import 'package:localshop/widgets_common/bg_widget.dart';
@@ -45,6 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         textColor: whiteColor,
                         onPress: () {
 
+                          Get.to(()=> Home());
                         })
                     .box
                     .width(context.screenWidth - 50)
