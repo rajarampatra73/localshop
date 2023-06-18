@@ -31,6 +31,7 @@ const searchanything = "Search anything...",
     topSellers = "Top Sellers",
     brand = "Brand",
     topCategories = "Top Categories",
+    featuredProduct = "Featured Product",
     womenDress = "Women Dress",
     girlsWatches = "Girls Watches",
     mobilephone = "Mobile Phone",
@@ -38,3 +39,4 @@ const searchanything = "Search anything...",
     tShirts = "TShirts",
     girlsDress = "Girls Dresses",
     featuredCategories = "Featured Categories";
+
