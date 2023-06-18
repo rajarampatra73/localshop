@@ -18,6 +18,23 @@ const termAndCond = "Terms and Conditions";
 const alreadyHaveAccount = "Already have an account? ";
 
 // home nave bar
-const home = "Home", categorise = "Categorise", cart = "Cart" , account = "Account";
+const home = "Home",
+    categorise = "Categorise",
+    cart = "Cart",
+    account = "Account";
 
+// home screen text
 
+const searchanything = "Search anything...",
+    todayDealToday = "Today's Deal",
+    flashsale = "Flash Sale",
+    topSellers = "Top Sellers",
+    brand = "Brand",
+    topCategories = "Top Categories",
+    womenDress = "Women Dress",
+    girlsWatches = "Girls Watches",
+    mobilephone = "Mobile Phone",
+    boysGlasses = "Boys Glasses",
+    tShirts = "TShirts",
+    girlsDress = "Girls Dresses",
+    featuredCategories = "Featured Categories";

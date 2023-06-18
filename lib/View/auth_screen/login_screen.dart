@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:localshop/View/auth_screen/signup_screen.dart';
 import 'package:localshop/View/home_screeen/home.dart';
 import 'package:localshop/consts/consts.dart';
+import 'package:localshop/consts/lists.dart';
 import 'package:localshop/widgets_common/applogo_widget.dart';
 import 'package:localshop/widgets_common/bg_widget.dart';
 import 'package:localshop/widgets_common/custom_textfild.dart';
