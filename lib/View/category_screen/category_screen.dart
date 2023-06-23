@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:localshop/View/category_screen/category_details.dart';
 import 'package:localshop/consts/consts.dart';
 import 'package:localshop/widgets_common/bg_widget.dart';
 
@@ -27,7 +29,9 @@ class CategoryScreen extends StatelessWidget {
                 children: [
               Image.asset(icBrands),
                 ],
-              ).box.white.rounded.clip(Clip.antiAlias).outerShadowSm.make();
+              ).box.white.rounded.clip(Clip.antiAlias).outerShadowSm.make().onTap(() {
+                Get.to(() => CategoryDetails(title: featuredCategories[index]));
+              });
             }),
       ),
     ));
